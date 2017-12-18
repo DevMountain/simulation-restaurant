@@ -10,44 +10,40 @@ Good luck and work hard!
 
 # Color Palette & Font
 
-<img src="https://github.com/Be-The-Bert/library-simulation/blob/master/assets/design-guide.png" />
+<img src="https://github.com/bethtelford/restaurant-simulation/blob/master/assets/design-guide.png" />
 
-<b><a href="https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans">Google Font - Open Sans</a></b>
+<b><a href="https://fonts.google.com/specimen/Open+Sans+Condensed?selection.family=Open+Sans+Condensed:300">Google Font - Open Sans</a></b>
 <br/>
-<b><a href="https://fonts.google.com/specimen/Alegreya?selection.family=Alegreya:700i">Google Font - Alegreya</a></b>
+<b><a href="https://fonts.google.com/specimen/Pacifico?selection.family=Pacifico">Google Font - Alegreya</a></b>
 
-### The icons are included in the assets folder of this repository
+### The icons and images are included in the assets folder of this repository
 
 
 # Application Design
 
 ## Auth View
 
-<img src="https://github.com/Be-The-Bert/library-simulation/blob/master/views/login.png" />
+<img src="https://github.com/bethtelford/restaurant-simulation/blob/master/views/login.png" />
 
 ## Browsing View
 
-<img src="https://github.com/Be-The-Bert/library-simulation/blob/master/views/browse.png" />
+<img src="https://github.com/bethtelford/restaurant-simulation/blob/master/views/browse.png" />
 
-## Book Details View
+## Details View
 
-<img src="https://github.com/Be-The-Bert/library-simulation/blob/master/views/details.png" />
+<img src="https://github.com/bethtelford/restaurant-simulation/blob/master/views/details.png" />
 
-## Edit Book View
+## Edit View
 
-<img src="https://github.com/Be-The-Bert/library-simulation/blob/master/views/edit.png" />
+<img src="https://github.com/bethtelford/restaurant-simulation/blob/master/views/edit.png" />
 
-## Add Book View
+## Add Item View
 
-<img src="https://github.com/Be-The-Bert/library-simulation/blob/master/views/add.png" />
+<img src="https://github.com/bethtelford/restaurant-simulation/blob/master/views/add.png" />
 
 ## Cart View
 
-<img src="https://github.com/Be-The-Bert/library-simulation/blob/master/views/cart.png" />
-
-## Bookshelf View
-
-<img src="https://github.com/Be-The-Bert/library-simulation/blob/master/views/shelf.png" />
+<img src="https://github.com/bethtelford/restaurant-simulation/blob/master/views/cart.png" />
 
 # Technical Requirements - Front-end
 
@@ -59,50 +55,39 @@ Good luck and work hard!
 
 ## Browsing View
 
-* User can view all products available for purchase/checkout
-* User can filter books by genre / availability
-* User can reset an applied filter to see a list of all books again
-* User can navigate to Book Details View by clicking on the books in the list
-* User can navigate to Add Book View
+* User can view all items available for purchase
+* User can filter books by meal
+* User can reset an applied filter to see a list of all items again
+* User can navigate to Item Details View by clicking on the items in the list
+* User can navigate to Add Item View
 * User can logout and be redirected back to the Auth View
 
-## Book Details View
+## Details View
 
-* User is able to add book to cart from here
-* User is able to navigate to Edit Book View 
-* User is able to delete a book from the database
+* User is able to add item to cart from here
+* User is able to navigate to Edit Item View 
+* User is able to delete a item from the database
   * This should redirect the user back to the Browsing View
 * User is able to navigate to previous view
-* User should be redirected to the Browsing View after adding the book to the cart
+* User should be redirected to the Browsing View after adding the item to the cart
 
-## Edit Book View
+## Edit View
 
-* User populates an editable section based on the selected books details to update and change information about book 
+* User populates an editable section based on the selected item's details to update and change information about the item 
 * User is able to navigate to previous view, canceling the edit
 * User should be redirected to the Browsing View on completion
 
-## Add Book View
-* User can add a new book to the library with all the appropriate values
-  * Title, Author, Genre, Description, img url, (The book should start in stock by default)
-  * User can see a preview of the image
-    * The image cannot break out of the preview container if the image is bigger
-    * The preview container's size should remain static
-* User is able to navigate to previous view, canceling the addition of a new book
+## Add View
+* User can add a new item to the menu with all the appropriate values
+  * Name, Price, and Description
+* User is able to navigate to previous view, canceling the addition of a new item
 * User should be redirected to the Browsing View on completion
 
-## Checkout / Cart View
+## Cart View
 * User is able to remove an item from cart and cart is updated 
 * User can checkout
-  * Should add the books in the cart to the user's bookshelf
-  * Should clear the cart
-  * Should update books from in stock to out of stock
+  * Thi should clear the cart
 * User should be redirected to the Browsing View on checkout
-
-## Bookshelf View
-* User can see list of books currently checked out on their account
-* User can return books
-  * Should remove the book from the user's shelf
-  * Should update the books from out of stock to in stock
 
 # Technical Requirements - Back-end
 * The back-end should be created using express.
